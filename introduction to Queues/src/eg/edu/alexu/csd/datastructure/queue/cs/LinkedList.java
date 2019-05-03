@@ -130,7 +130,7 @@ public class LinkedList {
 	}
 
 
-	public ILinkedBased sublist(int fromIndex, int toIndex) {
+	public LinkedList sublist(int fromIndex, int toIndex) {
 		// TODO Auto-generated method stub
 		if(head == null) return null;
 		LinkedList L = new LinkedList();
