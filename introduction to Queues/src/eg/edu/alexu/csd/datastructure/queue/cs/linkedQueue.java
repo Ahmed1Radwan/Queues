@@ -1,7 +1,7 @@
 package eg.edu.alexu.csd.datastructure.queue.cs;
 
-public class linkedQueue implements IQueue {
-	private ILinkedBased q = new LinkedList();
+public class linkedQueue implements IQueue,ILinkedBased {
+	private LinkedList q = new LinkedList();
 	@Override
 	public void enqueue(Object item) {
 		// TODO Auto-generated method stub

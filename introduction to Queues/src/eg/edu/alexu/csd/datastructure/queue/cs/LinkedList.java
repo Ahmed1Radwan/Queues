@@ -8,7 +8,7 @@ public class LinkedList implements ILinkedBased {
 		
 	}
 	
-	@Override
+
 	public void add(int index, Object data) {
 		// TODO Auto-generated method stub
 		Node temp = new Node(data);
@@ -23,7 +23,7 @@ public class LinkedList implements ILinkedBased {
 		incrementCounter();
 	}
 	
-	@Override
+	
 	public void add(Object data) {
 		// TODO Auto-generated method stub
 		if(head == null) {
@@ -49,7 +49,7 @@ public class LinkedList implements ILinkedBased {
 	private void decrementCounter() {
 		counter--;
 	}
-	@Override
+	
 	public Object get(int index) {
 		// TODO Auto-generated method stub
 		if(index < 0) return null;
@@ -67,7 +67,7 @@ public class LinkedList implements ILinkedBased {
 		return curr;
 	}
 
-	@Override
+	
 	public void set(int index, Object element) {
 		// TODO Auto-generated method stub
 		if(index < 0 || index > size()-1) return;
@@ -82,7 +82,7 @@ public class LinkedList implements ILinkedBased {
 		return;
 	}
 
-	@Override
+	
 	public void clear() {
 		// TODO Auto-generated method stub
 		if(head == null) return;
@@ -96,14 +96,14 @@ public class LinkedList implements ILinkedBased {
 		return;
 	}
 
-	@Override
+	
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
 		if(getCounter() == 0) return true;
 		else return false;
 	}
 
-	@Override
+	
 	public void remove(int index) {
 		// TODO Auto-generated method stub
 		if(index < 0 || index > (size() - 1)) {
@@ -123,17 +123,17 @@ public class LinkedList implements ILinkedBased {
 		return;
 	}
 
-	@Override
+	
 	public int size() {
 		// TODO Auto-generated method stub
 		return getCounter();
 	}
 
-	@Override
+
 	public ILinkedBased sublist(int fromIndex, int toIndex) {
 		// TODO Auto-generated method stub
 		if(head == null) return null;
-		ILinkedBased L = new LinkedList();
+		LinkedList L = new LinkedList();
 		Node curr = head.getNext();
 		for(int i=0;i<size()&&curr != null;i++) {
 			if(i>=fromIndex && i<=toIndex) {
@@ -144,7 +144,7 @@ public class LinkedList implements ILinkedBased {
 		return L;
 	}
 
-	@Override
+
 	public boolean contains(Object o) {
 		// TODO Auto-generated method stub
 		if(head == null) return false;

@@ -4,7 +4,7 @@ public class mainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
+		
 			IQueue s = new linkedQueue();
 			System.out.println(s.isEmpty());
 			s.enqueue(1);
@@ -23,16 +23,16 @@ public class mainClass {
 			System.out.println(s.size());
 			System.out.println(s.dequeue());
 			System.out.println(s.dequeue());
-		*/
+		/*
 		IQueue s = new arrayQueue(5);
 		System.out.println(s.isEmpty());
 		s.enqueue(1);
 		s.enqueue(2);
-		
+		System.out.println(s.isEmpty());
 		System.out.println(s.dequeue());
 		System.out.println(s.dequeue());
 		System.out.println(s.size());
-		
+		*/
 	}
 
 }

@@ -1,6 +1,6 @@
 package eg.edu.alexu.csd.datastructure.queue.cs;
 
-public class arrayQueue implements IQueue {
+public class arrayQueue implements IQueue,IArrayBased {
 	
 	static private int front =-1,rear=-1;
 	private int capacity ;
