@@ -1,7 +1,7 @@
 package eg.edu.alexu.csd.datastructure.queue.cs;
 
 
-public class LinkedList implements ILinkedBased {
+public class LinkedList {
 	public int counter=0;
 	public Node head = null;
 	public LinkedList() {
